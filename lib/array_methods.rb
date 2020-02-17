@@ -30,3 +30,5 @@ def find_min_value(array)
     end
   min
 end
+
+/*using .index(), .max(), and .min() methods would be significantly easier*/
