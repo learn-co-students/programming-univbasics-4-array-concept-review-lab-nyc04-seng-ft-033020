@@ -1,34 +1,18 @@
 def find_element_index(array, value_to_find)
-  array.length.times do |i|
-    if array[i] == value_to_find 
-      return i 
+
+  array.each_with_index do |num,index|
+    if 
+      num == value_to_find
+      return index 
     end
   end
   nil
 end
 
 def find_max_value(array)
-  max = 0 
-    array.length.times do |i|
-      if array[i] > max 
-        max = array[i]
-      end
-    end
-  max
+  array.max
 end
 
 def find_min_value(array)
-  min = 0 
-    array.length.times do |i|
-      if i == 0 
-        min = array[i]
-      else
-        if array[i] < min
-          min = array[i]
-        end
-      end
-    end
-  min
+  array.min
 end
-
-/*using .index(), .max(), and .min() methods would be significantly easier*/
